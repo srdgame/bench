@@ -298,6 +298,8 @@ def run_playbook(playbook_name, sudo=False, extra_vars=None):
 	else:
 		cwd = os.path.join(os.path.expanduser('~'), 'bench')
 
+        print 'CWD is '
+        print(cwd)
 	success = subprocess.check_call(args, cwd=os.path.join(cwd, 'playbooks'))
 	return success
 
