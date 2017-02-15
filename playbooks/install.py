@@ -231,7 +231,7 @@ def is_sudo_user():
 
 def get_passwords(ignore_prompt=False):
 	if not ignore_prompt:
-		mysql_root_password, admin_password = '', ''
+		mysql_root_password, admin_password = 'frappe_pass', 'admin'
 		pass_set = True
 		while pass_set:
 			# mysql root password
