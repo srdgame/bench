@@ -2,7 +2,9 @@
 *.py~
 *.swp
 .DS_Store
+.idea
 build/
 dist/
 *.egg-info/
 tags
+*~
